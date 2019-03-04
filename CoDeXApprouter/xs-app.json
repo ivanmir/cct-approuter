@@ -1,0 +1,7 @@
+{
+	"routes": [ {
+			"source": "/",
+			"destination": "CoDeX-destination"
+		}
+	]
+}
