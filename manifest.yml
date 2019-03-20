@@ -7,12 +7,12 @@ applications:
   - nodejs_buildpack
   memory: 120M
   routes:
-  - route: approuter-cfabap.cfapps.sap.hana.ondemand.com
+  - route: codex.cfapps.sap.hana.ondemand.com
   env:
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     destinations: >
       [
-         {"name":"CoDeX-destination", "url" :"https://cfabap.cfapps.sap.hana.ondemand.com/ConnectivityRFCExample", "forwardAuthToken": true }
+         {"name":"CoDeX-destination", "url" :"https://cfabap.cfapps.sap.hana.ondemand.com/ConnectivityRFCExample", "forwardAuthToken": true },{"name":"cct-ui", "url" :"https://lpdev-default-translation-server.cfapps.sap.hana.ondemand.com/", "forwardAuthToken": true }
       ]
   services:
     - CoDeX-xsuaa

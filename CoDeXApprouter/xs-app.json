@@ -1,7 +1,11 @@
 {
 	"routes": [ {
-			"source": "/",
+			"source": "/ConnectivityRFCExample/*",
 			"destination": "CoDeX-destination"
+		},
+		{
+			"source": "/ui/*",
+			"destination": "cct-ui"
 		}
 	]
 }
