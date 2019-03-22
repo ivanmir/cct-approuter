@@ -10,7 +10,7 @@
 {
 			"source": "^/tsaccess/(.*)$",
 			"destination": "CoDeX-destination",
-			"authenticationType":"xsuaa",
+			"authenticationType":"none",
 			"target": "/$1"
 		}
 	]
