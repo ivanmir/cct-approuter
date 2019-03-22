@@ -1,16 +1,17 @@
 {
 	"routes": [ 
+
 		{
 			"source": "^/ui/(.*)$",
 			"destination": "cct-ui",
 			"authenticationType":"xsuaa",
-			"target": "$1"
+			"target": "/$1"
 		},
 {
 			"source": "^/tsaccess/(.*)$",
 			"destination": "CoDeX-destination",
 			"authenticationType":"xsuaa",
-			"target": "$1"
+			"target": "/$1"
 		}
 	]
 }

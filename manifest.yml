@@ -1,7 +1,7 @@
 ---
 applications:
  
-- name: CoDeXApprouter
+- name: cct-approuter
   path: CoDeXApprouter
   buildpacks:
   - nodejs_buildpack
@@ -12,7 +12,7 @@ applications:
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     destinations: >
       [
-         {"name":"CoDeX-destination", "url" :"https://cfabap.cfapps.sap.hana.ondemand.com/ConnectivityRFCExample", "forwardAuthToken": true },{"name":"cct-ui", "url" :"https://cct-editor.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true }
+         {"name":"CoDeX-destination", "url" :"https://cct-ts-connector.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },{"name":"cct-ui", "url" :"https://cct-editor.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true }
       ]
   services:
     - CoDeX-xsuaa
