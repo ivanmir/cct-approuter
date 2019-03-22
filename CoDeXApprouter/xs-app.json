@@ -4,8 +4,10 @@
 			"destination": "CoDeX-destination"
 		},
 		{
-			"source": "/ui/*",
-			"destination": "cct-ui"
+			"source": "^/ui/(.*)$",
+			"destination": "cct-ui",
+			"authenticationType":"xsuaa",
+			"target": "$1"
 		}
 	]
 }

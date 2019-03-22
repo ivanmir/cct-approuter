@@ -10,3 +10,8 @@ Manifest file should automatically be used!
 ### Routes
 The destinations are defined in manifest.yml
 The Mapping of the destination to the endpoints happens in xs-app.json 
+
+### Helpfull links
+https://github.wdf.sap.corp/xs2/approuter.js
+
+
