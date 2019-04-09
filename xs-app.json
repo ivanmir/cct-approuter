@@ -7,6 +7,12 @@
 			"authenticationType":"xsuaa",
 			"target": "/$1"
 		},
+		{
+			"source": "^/ts/(.*)$",
+			"destination": "cct-ts-destination",
+			"authenticationType":"xsuaa",
+			"target": "/$1"
+		},
 {
 			"source": "^/tsaccess/(.*)$",
 			"destination": "CoDeX-destination",

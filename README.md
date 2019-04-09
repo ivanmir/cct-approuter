@@ -1,6 +1,6 @@
 ## Approuter
 
-https://codex.cfapps.sap.hana.ondemand.com/
+https://cct-approuter.cfapps.sap.hana.ondemand.com
 
 ### Deploy
 Deploy simply with this command from within the current folder:
