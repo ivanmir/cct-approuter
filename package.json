@@ -1,5 +1,5 @@
 {
-  "name": "CoDeXApprouter",
+  "name": "cct-approuter",
   "version": "1.0.0",
   "description": "",
   "main": "node_modules/@sap/approuter/approuter.js",
@@ -11,8 +11,6 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@sap/approuter": "^3.0.1"
-  },
-    "engines": {
-    "node": "6.15.1"
   }
+  
 }

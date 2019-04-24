@@ -16,4 +16,4 @@ applications:
          {"name":"cct-ui", "url" :"https://cct-editor.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true }
       ]
   services:
-    - cct-xsuaa
+    - cct-approuter-xsuaa
