@@ -12,5 +12,12 @@
 			"authenticationType":"xsuaa",
 			"target": "/$1"
 		}
+		,
+		{
+			"source": "^/orchestration/(.*)$",
+			"destination": "cct-orchestration",
+			"authenticationType":"none",
+			"target": "/$1"
+		}
 	]
 }

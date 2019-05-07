@@ -12,8 +12,8 @@ applications:
     destinations: >
       [
          {"name":"cct-destination", "url" :"https://cct-ts-connector.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
-         {"name":"cct-ts-destination", "url" :"https://cct-ts-connector-test-temp-anton.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
-         {"name":"cct-ui", "url" :"https://cct-editor.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true }
+         {"name":"cct-ui", "url" :"https://cct-editor.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
+         {"name":"cct-orchestration", "url" :"https://cct-orchestration.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true }
       ]
   services:
     - cct-xsuaa
