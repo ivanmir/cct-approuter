@@ -11,9 +11,11 @@ applications:
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     destinations: >
       [
-         {"name":"cct-destination", "url" :"https://cct-ts-connector.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
+         {"name":"cct-ts-connector", "url" :"https://cct-ts-connector.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
          {"name":"cct-ui", "url" :"https://cct-editor.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
-         {"name":"cct-orchestration", "url" :"https://cct-orchestration.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true }
+         {"name":"cct-orchestration", "url" :"https://cct-orchestration.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
+         {"name":"cct-git-connector", "url" :"https://cct-git-connector.cfapps.sap.hana.ondemand.com/github", "forwardAuthToken": true }
+
       ]
   services:
     - cct-xsuaa

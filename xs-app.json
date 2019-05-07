@@ -7,8 +7,8 @@
 			"target": "/$1"
 		},
 		{
-			"source": "^/ts/(.*)$",
-			"destination": "cct-destination",
+			"source": "^/assignments/(.*)$",
+			"destination": "cct-ts-connector",
 			"authenticationType":"xsuaa",
 			"target": "/$1"
 		}
@@ -16,6 +16,13 @@
 		{
 			"source": "^/orchestration/(.*)$",
 			"destination": "cct-orchestration",
+			"authenticationType":"none",
+			"target": "/$1"
+		}
+		,
+		{
+			"source": "^/github/(.*)$",
+			"destination": "cct-git-connector",
 			"authenticationType":"none",
 			"target": "/$1"
 		}
