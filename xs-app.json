@@ -9,7 +9,7 @@
 		{
 			"source": "^/assignments/(.*)$",
 			"destination": "cct-ts-connector",
-			"authenticationType":"xsuaa",
+			"authenticationType":"none",
 			"target": "/$1"
 		}
 		,
