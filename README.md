@@ -30,10 +30,11 @@ https://github.com/ivanmir/cct-ts-connector.git
 > Manifest file should automatically be used!
 
 ### Routes
-- A destination named "cct-ts-connector" is defined in both  manifest.yml and xs-app.json
-- Adjust the routes for the application under the manifest.yml (pay attention to the CF landscape domain for each URL used). Make sure the destination points to the BAPI application's URL (prerequisite).
+- A destination named "cct-ts-connector" is defined in both  manifest.yml and xs-app.json.
+- Adjust route for the AppRouter URL under the manifest.yml (pay attention to the CF landscape domain for each URL used)
+- Make sure the destination "cct-ts-connector" points to the BAPI application's URL (listed here as prerequisite).
 
-| WARNING: This destination is not to be mistaken with the destination used by the BAPI application and shouldn't be modified/adapted. It only maps the router's URL '/' to the actual BAPI application's URL while forwarding the JWT authentication generated after the user is authorized by the Cloud Platform. |
+| <span style="color:red">WARNING: The destination name is not to be mistaken with the destination service, nor the destination name you use d to address the ABAP sYstem. You must not modify/adapt its name. It only maps the AppRouter's URL '/' to the actual BAPI application's URL while forwarding the JWT authentication generated after the user is authorized by the Cloud Platform.</span> |
 | --- |
 
 ### Running
