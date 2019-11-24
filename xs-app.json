@@ -1,30 +1,12 @@
-{
-	"routes": [ 
-		{
-			"source": "^/ui/(.*)$",
-			"destination": "cct-ui",
-			"authenticationType":"xsuaa",
-			"target": "/$1"
-		},
-		{
-			"source": "^/assignments/(.*)$",
-			"destination": "cct-ts-connector",
-			"authenticationType":"none",
-			"target": "/$1"
-		}
-		,
-		{
-			"source": "^/orchestration/(.*)$",
-			"destination": "cct-orchestration",
-			"authenticationType":"none",
-			"target": "/$1"
-		}
-		,
-		{
-			"source": "^/github/(.*)$",
-			"destination": "cct-git-connector",
-			"authenticationType":"none",
-			"target": "/$1"
-		}
-	]
+{ 
+	"authenticationMethod": "route",
+	"logout": {
+		"logoutEndpoint": "/do/logout"
+	},	
+	"routes": [ {
+		"source": "/",
+		"authenticationType": "xsuaa",
+		"destination": "cct-ts-connector",
+		"csrfProtection": false
+	} ]	
 }

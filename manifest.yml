@@ -4,18 +4,15 @@ applications:
 - name: cct-approuter
   buildpacks:
   - nodejs_buildpack
-  memory: 120M
+  memory: 256M
+  disk-quota: 1G
   routes:
-  - route: cct-approuter.internal.cfapps.sap.hana.ondemand.com
+  - route: cct-approuter.cfapps.us10.hana.ondemand.com
   env:
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     destinations: >
       [
-         {"name":"cct-ts-connector", "url" :"https://cct-ts-connector.internal.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
-         {"name":"cct-ui", "url" :"https://cct-editor.internal.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
-         {"name":"cct-orchestration", "url" :"https://cct-orchestration.internal.cfapps.sap.hana.ondemand.com", "forwardAuthToken": true },
-         {"name":"cct-git-connector", "url" :"https://cct-git-connector.internal.cfapps.sap.hana.ondemand.com/github", "forwardAuthToken": true }
-
+         {"name":"cct-ts-connector", "url" :"https://cct-ts-connector.cfapps.us10.hana.ondemand.com", "forwardAuthToken": true }
       ]
   services:
-    - cct-xsuaa
+    - jco-xsuaa

@@ -7,9 +7,10 @@
     "start": "node node_modules/@sap/approuter/approuter.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Simon Luser",
-  "license": "Apache-2.0",
   "dependencies": {
-    "@sap/approuter": "^3.0.1"
-  }
+    "@sap/approuter": "^6.6.0"
+  },
+   "engines": {
+      "node": "^10.16.0"
+   }  
 }
