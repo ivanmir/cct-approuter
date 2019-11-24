@@ -34,20 +34,9 @@ https://github.com/ivanmir/cct-ts-connector.git
 - Adjust the route for the AppRouter URL under the manifest.yml (pay attention to the CF landscape domain for each URL used)
 - Make sure the destination "cct-ts-connector" points to the BAPI application's URL (listed here as prerequisite).
 
-<style
-  type="text/css">
-h1 {color:red;}
+| <mark>WARNING:The destination name is not to be mistaken with the destination service, nor the destination name you use d to address the ABAP system. You must not modify/adapt its name. It only maps the AppRouter's URL '/' to the actual BAPI application's URL while forwarding the JWT authentication generated after the user is authorized by the Cloud Platform.</mark> |
+| --- |
 
-p {color:blue;}
-</style>
-<p>okay</p>
-
-  <text font-size="16" x="10" y="20" style="text-align: justify">
-    <tspan style="text-align: justify" fill="red">WARNING: </tspan>
-    <tspan style="text-align: justify" fill="red">The destination name is not to be mistaken with the destination service, nor the destination name you use d to address the ABAP system.</tspan>
-    <tspan style="text-align: justify" fill="red">You must not modify/adapt its name. It only maps the AppRouter's URL '/' to the actual BAPI application's URL while forwarding the JWT authentication generated after the user is authorized by the Cloud Platform.</tspan>
-  </text>
-</svg>
 
 ### Running
 
