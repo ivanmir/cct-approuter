@@ -13,11 +13,14 @@ https://github.com/ivanmir/cct-ts-connector.git
 ### Clone the git repository
 - Clone App to a folder with your preferred Git Client.
 
+### Adjust entries on .npmrc file 
+- Make sure there is no SAP repository specified on hidden file named ".npmrc"
+
 ### Build
 - Run the following npm commands:
 
 ```
-    npm config set @sap:registry https://npm.sap.com
+    npm config delete @sap:registry
     npm install
 ```
 
@@ -30,7 +33,8 @@ https://github.com/ivanmir/cct-ts-connector.git
 > Manifest file should automatically be used!
 
 ### Routes
-- A destination named "cct-ts-connector" is defined in both  manifest.yml and xs-app.json.
+- A destination named "cct-ts-connector" is defined on files: manifest.yml and xs-app.json from this project 
+- The xs-security.json file from project cct-ts-connector also contains references back to the route used on this project. 
 - Adjust the route for the AppRouter URL under the manifest.yml (pay attention to the CF landscape domain for each URL used)
 - Make sure the destination "cct-ts-connector" points to the BAPI application's URL (listed here as prerequisite).
 

@@ -7,12 +7,12 @@ applications:
   memory: 256M
   disk-quota: 1G
   routes:
-  - route: cct-approuter.cfapps.us10.hana.ondemand.com
+  - route: i807056-cct-approuter.cfapps.us10.hana.ondemand.com
   env:
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     destinations: >
       [
-         {"name":"cct-ts-connector", "url" :"https://cct-ts-connector.cfapps.us10.hana.ondemand.com", "forwardAuthToken": true }
+         {"name":"cct-ts-connector", "url" :"https://i807056-cct-ts-connector.cfapps.us10.hana.ondemand.com", "forwardAuthToken": true }
       ]
   services:
     - jco-xsuaa
