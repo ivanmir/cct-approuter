@@ -9,10 +9,13 @@ applications:
   routes:
   - route: i807056-cct-approuter.cfapps.us10.hana.ondemand.com
   env:
+    XS_APP_LOG_LEVEL: debug
+    REQUEST_TRACE: true
+    SET_LOGGING_LEVEL: '{*: DEBUG}'
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     destinations: >
       [
-         {"name":"cct-ts-connector", "url" :"https://i807056-cct-ts-connector.cfapps.us10.hana.ondemand.com", "forwardAuthToken": true }
+         {"name":"cct-ts-connector", "url" :"https://i807056-cct-ts-connector.cfapps.us10.hana.ondemand.com/", "forwardAuthToken": true }
       ]
   services:
-    - jco-xsuaa
+    - name: jco-xsuaa

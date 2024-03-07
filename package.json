@@ -2,10 +2,8 @@
   "name": "cct-approuter",
   "version": "1.0.0",
   "description": "",
-  "main": "node_modules/@sap/approuter/approuter.js",
   "scripts": {
-    "start": "node node_modules/@sap/approuter/approuter.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/@sap/approuter/approuter.js"
   },
   "dependencies": {
     "@sap/approuter": "^16.1.1"

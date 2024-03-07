@@ -3,10 +3,30 @@
 	"logout": {
 		"logoutEndpoint": "/do/logout"
 	},	
-	"routes": [ {
-		"source": "/",
+	"routes": [ 
+	{
+		"source": "/hello",
 		"authenticationType": "xsuaa",
 		"destination": "cct-ts-connector",
 		"csrfProtection": false
-	} ]	
+	},
+	{
+		"source": "/userInfo",
+		"authenticationType": "xsuaa",
+		"destination": "cct-ts-connector",
+		"csrfProtection": false
+	},	
+	{
+		"source": "/com/userInfo",
+		"authenticationType": "xsuaa",
+		"destination": "cct-ts-connector",
+		"csrfProtection": false
+	},	
+	{
+		"source": "/bapi",
+		"authenticationType": "xsuaa",
+		"destination": "cct-ts-connector",
+		"csrfProtection": false
+	}
+	]	
 }
